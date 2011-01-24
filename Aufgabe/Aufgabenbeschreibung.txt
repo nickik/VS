@@ -1,0 +1,17 @@
+Aufgabenbeschreibung:
+
+1. Die erste Aufgabe besteht darin ein "Prisonars Dilema" - Spiel zu implementieren.
+2. Schreibe mehrere bots fuer verschiedene "Prisonars Dilema"-Spielstrategien.
+3. Da wir jetzt eine effizienten weg brauchen diese Bots (oder irgend etwas anderes)
+   zu vergleichen werden wir eine Maechtige Vergleichslibrary schreiben.
+   Diese Library bekommt ein pool von objekten und eine Vergleichsstrategie. Ausserdem
+   braucht Sie eine Turniermode. Mit Turniermode sind zu Beispiel Liga (allvsall) oder playoffs
+   gemeint. Der Rueckgabewert ist je nach Turniermode eine Rangliste, ein Gewinner oder eine andere
+   Sinnvolle darstellung des Turnierverlaufs.
+4. Bis jetzt war das alles sehr einfach. Was man bei so vielen Vergleichen wirklich will ist 
+   "paralellism" was sich auf mehr Cores oder mehr Computer beziehen kann. Gib dem Benutzer zumindest 
+   drei Standard ausfuehrungs Moeglichkeiten seriel, parallel (auf cores) oder distributet (die Spiele werden
+   auf anderen Computer gerechnet). Der Nutzer soll aber die Maeglichkeit haben eigene executer zu definieren
+   die je nach dem etwas kompliezierteres machen.
+5. Als beispiel lass 4 bots gegeneinander antretten und gib den gewinner aus (in seriel, parallel und distributet).
+
