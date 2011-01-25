@@ -21,9 +21,7 @@
 (defn sort-by-wincount
   "Returnes the list of all the players"
   [coll]
-  (keys (into {}
-         (sort-by second > (seq (fmap #(reduce + (map :score %))
-                                      (group-by :name  coll)))))))
+  (map first (sort-by second (fmap count (group-by identity coll)))))
 
 (defn allvsall
   "Sends the pairs to the executers"
